@@ -16,5 +16,20 @@ public class StringUtils {
         }
         return map;
     }
+    // 1.3 打印出现次数最多的字母及其次数
+    public static void printMostFrequentChar(String str) {
+        Map<Character, Integer> map = countOccurrences(str);
+        int max = 0;
+        char maxChar = ' ';
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            int count = entry.getValue();
+            if (count > max) {
+                max = count;
+                maxChar = entry.getKey();
+            }
+        }
+        System.out.printf("Most frequent char: %c (%d times)\n", maxChar, max);
+    }
+
 
 }
