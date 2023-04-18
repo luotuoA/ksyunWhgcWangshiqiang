@@ -42,7 +42,8 @@
 	  	实现路径：
 		com/ksyun/whgc/wangshiqiang/secondQuestion/FieldName.java
 	  	测试方法路径：无
-	  	commit id：e6d9fbdf400eb87f115b948ebc7bf61638651391
+	  	commit id：
+        e6d9fbdf400eb87f115b948ebc7bf61638651391
 
 
 	2.2.定义工具类输出集合对象:集合输出时根据属性的标注输出属性字段名；
