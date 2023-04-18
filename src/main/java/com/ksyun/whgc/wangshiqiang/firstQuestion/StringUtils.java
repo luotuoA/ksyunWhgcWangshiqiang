@@ -30,6 +30,26 @@ public class StringUtils {
         }
         System.out.printf("Most frequent char: %c (%d times)\n", maxChar, max);
     }
+    // 1.4 返回不含有重复字符的最长子串
+    public static String longestSubstringWithoutDuplicates(String s) {
+        int n = s.length();
+        int left = 0, right = 0;
+        Set<Character> set = new HashSet<>();
+        String longestSubstring = "";
 
+        while (right < n) {
+            if (!set.contains(s.charAt(right))) {
+                set.add(s.charAt(right));
+                right++;
+            } else {
+                set.remove(s.charAt(left));
+                left++;
+            }
+            if (set.size() > longestSubstring.length()) {
+                longestSubstring = s.substring(left, right);
+            }
+        }
+        return longestSubstring;
+    }
 
 }
