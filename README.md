@@ -38,6 +38,7 @@
 	
 
 	2.1.定义注解类：用于标注集合对象属性；
+
 	  	实现路径：
 		com/ksyun/whgc/wangshiqiang/secondQuestion/FieldName.java
 	  	测试方法路径：无
